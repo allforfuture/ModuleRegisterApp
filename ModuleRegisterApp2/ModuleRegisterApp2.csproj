@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F4DD6CA-C722-4AB2-B9D7-42F841E3ACF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuleRegisterApp2</RootNamespace>
+    <AssemblyName>ModuleRegisterApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\旧标签打印捆包登记软件\kk04\TrayGuard-20170519T040244Z-001\TrayGuard\MovieDB\bin\TrayGuard 4.5.3.7\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\Modify_20171114_(QR印字修正2_pakcラベルのみQRにpakcidを無くす)\01_Source\lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BellowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BellowFrm.Designer.cs">
+      <DependentUpon>BellowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BellowSiteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BellowSiteFrm.Designer.cs">
+      <DependentUpon>BellowSiteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComMethod.cs" />
+    <Compile Include="InfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoFrm.Designer.cs">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleRegisterHelper\DBHelper.cs" />
+    <Compile Include="ModuleRegisterHelper\ModelInfo.cs" />
+    <Compile Include="ModuleRegisterHelper\CartonInfo.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleRegisterHelper\ModuleInfo.cs" />
+    <Compile Include="ModuleRegisterHelper\DeptInfo.cs" />
+    <Compile Include="PrintLabel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ModuleRegisterHelper\RecordInfo.cs" />
+    <Compile Include="ModuleRegisterHelper\UserInfo.cs" />
+    <Compile Include="ReturnFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnFrm.Designer.cs">
+      <DependentUpon>ReturnFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapCartonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapCartonFrm.Designer.cs">
+      <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapFrm.Designer.cs">
+      <DependentUpon>ScrapFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BellowFrm.resx">
+      <DependentUpon>BellowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoFrm.resx">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnFrm.resx">
+      <DependentUpon>ReturnFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapCartonFrm.resx">
+      <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapFrm.resx">
+      <DependentUpon>ScrapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Verson.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,155 @@
+﻿<Window x:Class="ModuleRegisterApp3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuleRegisterApp3"
+        mc:Ignorable="d"
+        Title="Window1" Height="630" Width="859">
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="MenuStyle" TargetType="{x:Type Menu}">
+                <!--<Setter Property="Menu.Visibility" Value="Hidden"></Setter>-->
+                <Setter Property="Width" Value="Auto"></Setter>
+                <Setter Property="MinHeight" Value="25"></Setter>
+                <Setter Property="Foreground"  Value="Black"></Setter>
+            </Style>
+            <Style x:Key="DigitCbx" TargetType="{x:Type CheckBox}">
+                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="Margin" Value="5,0,0,0"></Setter>
+            </Style>
+            <Style x:Key="DigitTxt" TargetType="{x:Type TextBox}">
+                <Setter Property="Background" Value="White"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="Margin" Value="5,2,5,2"></Setter>
+            </Style>
+            <Style x:Key="DigitBtn" TargetType="{x:Type Button}">
+                <Setter Property="Focusable" Value="False"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="Margin" Value="0"></Setter>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Width="60" Height="50">
+                                <Ellipse Width="57" Height="49" x:Name="TB" StrokeThickness="1"
+                           Stroke="{TemplateBinding Foreground}" Fill="{TemplateBinding Background}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                                                  VerticalAlignment="Center"></ContentPresenter>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="DigitLabel" TargetType="{x:Type Label}">
+                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="Foreground" Value="Blue"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+            </Style>
+            <Style x:Key="DigitPicker" TargetType="{x:Type DatePicker}">
+                <Setter Property="MinWidth" Value="60"></Setter>
+                <Setter Property="Margin" Value="5,2,0,2"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Column="0" Grid.Row="0">
+            <Menu DockPanel.Dock="Top" Style="{StaticResource MenuStyle}">
+                <MenuItem Name="PodMenuItem" Header="制造(_M)">
+                    <MenuItem Name="BellowMenuItem" Header="借出(_B)"></MenuItem>
+                    <MenuItem Name="ReturnMenuItem" Header="还入(_R)"></MenuItem>
+                    <MenuItem Name="BellowSiteMenuItem"  Header="借出Site(_S)"></MenuItem>
+                </MenuItem>
+                <MenuItem Name="PCMenuItem" Header="仓库(_K)">
+                    <MenuItem Name="ScrapMenuItem" Header="报废(_S)"></MenuItem>
+                    <MenuItem Name="ScrapCartonMenuItem" Header="报废|装箱(_C)"  InputGestureText="Ctrl+C"></MenuItem>
+                </MenuItem>
+            </Menu>
+
+            <Canvas DockPanel.Dock="Top" MaxHeight="50" MinHeight="45">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.565"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+                <Label Canvas.Right="5" Name="labelA" Content="NIDEC" Foreground="#FF46FF1D" FontSize="24"  FontStyle="Italic" FontWeight="Bold"/>
+            </Canvas>
+        </DockPanel>
+
+        <Grid Grid.Column="0" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.7" Grid.Row="1"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  MinWidth="50"/>
+                <ColumnDefinition  MinWidth="140" Width="Auto"/>
+                <ColumnDefinition  MinWidth="30"/>
+                <ColumnDefinition  MinWidth="50"/>
+                <ColumnDefinition  MinWidth="160" Width="Auto"/>
+                <ColumnDefinition  MinWidth="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="30"/>
+                <RowDefinition MinHeight="30"/>
+                <RowDefinition MinHeight="30"/>
+                <RowDefinition MinHeight="30"/>
+                <RowDefinition MinHeight="30" Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!--选项区-->
+            <!--第一行-->
+            <Label Grid.Column="0" Grid.Row="0" Content="Module:" Style="{StaticResource DigitLabel}"></Label>
+            <TextBox Grid.Column="1" Grid.Row="0" Name="module_txt" Style="{StaticResource DigitTxt}"></TextBox>
+            <CheckBox Grid.Column="2" Grid.Row="0" Name="Module_cbx" Style="{StaticResource DigitCbx}"></CheckBox>
+            <Label Grid.Column="3" Grid.Row="0" Content="Dept:" Style="{StaticResource DigitLabel}"></Label>
+            <TextBox Grid.Column="4" Grid.Row="0" Name="Dept_txt"  Style="{StaticResource DigitTxt}"></TextBox>
+            <CheckBox Grid.Column="5" Grid.Row="0" Name="Dept_cbx"  Style="{StaticResource DigitCbx}"></CheckBox>
+            <!--第二行-->
+            <Label Grid.Column="0" Grid.Row="1" Content="Record ID:" Style="{StaticResource DigitLabel}"></Label>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="record_txt" Style="{StaticResource DigitTxt}"></TextBox>
+            <CheckBox Grid.Column="2" Grid.Row="1" Name="record_cbx" Style="{StaticResource DigitCbx}"></CheckBox>
+            <Label Grid.Column="3" Grid.Row="1" Content="Date Zone:" Style="{StaticResource DigitLabel}"></Label>
+            <DockPanel Grid.Column="4" Grid.Row="1">
+                <DatePicker Name="start_dPic" Style="{StaticResource DigitPicker}"></DatePicker>
+                <Label Content="to:"></Label>
+                <DatePicker Name="end_dPic"  Style="{StaticResource DigitPicker}"></DatePicker>
+            </DockPanel>
+            <CheckBox Grid.Column="5" Grid.Row="1" Name="date_cbx" Style="{StaticResource DigitCbx}"></CheckBox>
+            <!--第三行-->
+            <Label Grid.Column="0" Grid.Row="2" Content="Carton:" Style="{StaticResource DigitLabel}"></Label>
+            <TextBox Grid.Column="1" Grid.Row="2" Name="carton_txt" Style="{StaticResource DigitTxt}"></TextBox>
+            <CheckBox Grid.Column="2" Grid.Row="2" Name="carton_cbx" Style="{StaticResource DigitCbx}"></CheckBox>
+            <Label Grid.Column="3" Grid.Row="2" Content="Memo:" Style="{StaticResource DigitLabel}"></Label>
+            <TextBox Grid.Column="4" Grid.Row="2" Name="memo_txt" Style="{StaticResource DigitTxt}"></TextBox>
+            <CheckBox Grid.Column="5" Grid.Row="2" Name="memo_cbx" Style="{StaticResource DigitCbx}"></CheckBox>
+            <Button Style="{StaticResource DigitBtn}" Grid.Column="4" Grid.Row="3" Name="Submit_btn" Content="Submit"
+                    Click="Submit_btn_Click"></Button>
+            <!--第四行-->
+            <DockPanel Name="resultDockPanel" Grid.ColumnSpan="5" Margin="0,5,0,5" Grid.Row="4" Height="Auto" Width="Auto" HorizontalAlignment="Center">
+                <DockPanel.DataContext>
+                    <local:ListGridItem/>
+                </DockPanel.DataContext>
+                <DockPanel.Resources>
+                    
+                </DockPanel.Resources>
+                <!--
+                <DataGrid  ItemsSource="{Binding Source=listDataSource}" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          x:Name="resultDataGrid"  AutoGenerateColumns="False" MaxHeight="200" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding RecordID}" Header="RecordID"/>
+                        <DataGridTextColumn Binding="{Binding Site}" Header="Site"/>
+                        <DataGridTextColumn Binding="{Binding Qty}" Header="Qty"/>
+                        <DataGridTextColumn Binding="{Binding Register}" Header="Register"/>
+                        <DataGridHyperlinkColumn Header="Opera"></DataGridHyperlinkColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                -->
+                </DockPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+		//API
+		private void button1_Click(object sender, EventArgs e)
+		{
+			//string a = SendRequestByGetMethod("http://www.weather.com.cn/data/citydata/china.html", System.Text.Encoding.UTF8);			
+			string a = SendRequestByGetMethod("http://www.weather.com.cn/data/sk/101010100.html", System.Text.Encoding.UTF8);
+		}
+		public static String SendRequestByGetMethod(String url, Encoding encoding)
+		{
+			HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(url);
+			webRequest.Method = "GET";
+			HttpWebResponse webResponse = (HttpWebResponse)webRequest.GetResponse();
+			StreamReader sr = new StreamReader(webResponse.GetResponseStream(), encoding);
+			return sr.ReadToEnd();
+		}

@@ -1,0 +1,7 @@
+t_module表	增加t_module表里的reason字段
+
+t_record表	t_record表里的statue字段改成category_id
+		t_record表里的reason字段改成category_cd
+
+t_reason表	表名t_reason改成t_category
+		t_reason表里的reason字段改成category_cd

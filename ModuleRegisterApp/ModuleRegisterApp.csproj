@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{955F38AB-4F21-4C23-AA22-8C08D130631E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuleRegisterApp</RootNamespace>
+    <AssemblyName>ModuleRegisterApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\publish\ModuleRegister\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>1.0.0.14</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DF087310614BE2C6D6C9CACAE49AD6FCFCD1BD1D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ModuleRegisterApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bitbug_favicon %283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\旧标签打印捆包登记软件\kk04\TrayGuard-20170519T040244Z-001\TrayGuard\MovieDB\bin\TrayGuard 4.5.3.7\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\Modify_20171114_(QR印字修正2_pakcラベルのみQRにpakcidを無くす)\01_Source\lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Check.cs" />
+    <Compile Include="ComMethod.cs" />
+    <Compile Include="DBFactory.cs" />
+    <Compile Include="InfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoFrm.Designer.cs">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPrint.cs" />
+    <Compile Include="IsUpdateEnable.cs" />
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageFrm.Designer.cs">
+      <DependentUpon>MessageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutSiteRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutSiteRegister.Designer.cs">
+      <DependentUpon>OutSiteRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordInfo.cs" />
+    <Compile Include="RegisterFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterFrm.Designer.cs">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnModuleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnModuleFrm.Designer.cs">
+      <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapCartonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapCartonFrm.Designer.cs">
+      <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapFrm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapFrm2.Designer.cs">
+      <DependentUpon>ScrapFrm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapFrm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapFrm1.Designer.cs">
+      <DependentUpon>ScrapFrm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapFrm.Designer.cs">
+      <DependentUpon>ScrapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs" />
+    <EmbeddedResource Include="InfoFrm.resx">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageFrm.resx">
+      <DependentUpon>MessageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutSiteRegister.resx">
+      <DependentUpon>OutSiteRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterFrm.resx">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReturnModuleFrm.resx">
+      <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapCartonFrm.resx">
+      <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapFrm2.resx">
+      <DependentUpon>ScrapFrm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapFrm1.resx">
+      <DependentUpon>ScrapFrm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapFrm.resx">
+      <DependentUpon>ScrapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App - 复制.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ModuleRegisterApp_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon %283%29.ico" />
+    <Content Include="Verson.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
