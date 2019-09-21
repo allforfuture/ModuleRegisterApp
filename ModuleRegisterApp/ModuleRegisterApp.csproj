@@ -14,7 +14,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\publish\ModuleRegister\</PublishUrl>
+    <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,8 +25,8 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>14</ApplicationRevision>
-    <ApplicationVersion>1.0.0.14</ApplicationVersion>
+    <ApplicationRevision>1430</ApplicationRevision>
+    <ApplicationVersion>2.0.0705.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -53,16 +53,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DF087310614BE2C6D6C9CACAE49AD6FCFCD1BD1D</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>E05B4CD177D19FC981ADF953966A471CBF3042DE</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ModuleRegisterApp_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ModuleRegisterApp_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>bitbug_favicon %283%29.ico</ApplicationIcon>
@@ -132,6 +132,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationOut.Designer.cs">
+      <DependentUpon>ReservationOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReturnModuleFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,12 @@
     </Compile>
     <Compile Include="ScrapCartonFrm.Designer.cs">
       <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationIn.Designer.cs">
+      <DependentUpon>ReservationIn.cs</DependentUpon>
     </Compile>
     <Compile Include="ScrapFrm2.cs">
       <SubType>Form</SubType>
@@ -191,11 +203,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReservationOut.resx">
+      <DependentUpon>ReservationOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReturnModuleFrm.resx">
       <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScrapCartonFrm.resx">
       <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationIn.resx">
+      <DependentUpon>ReservationIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScrapFrm2.resx">
       <DependentUpon>ScrapFrm2.cs</DependentUpon>
@@ -206,10 +224,6 @@
     <EmbeddedResource Include="ScrapFrm.resx">
       <DependentUpon>ScrapFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App - 复制.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ModuleRegisterApp_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleRegisterApp", "ModuleRegisterApp\ModuleRegisterApp.csproj", "{955F38AB-4F21-4C23-AA22-8C08D130631E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleRegisterApp2", "ModuleRegisterApp2\ModuleRegisterApp2.csproj", "{8F4DD6CA-C722-4AB2-B9D7-42F841E3ACF0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleRegisterApp3", "ModuleRegisterApp3\ModuleRegisterApp3.csproj", "{D3D2122C-3CB3-4DF8-B602-49968B869407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06BB141E-2CC0-4AF6-91C3-6225FE03308D}"
+	ProjectSection(SolutionItems) = preProject
+		Update.txt = Update.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9703EAFB-7E37-451E-B47A-96F299BD3FEA}
 	EndGlobalSection
 EndGlobal

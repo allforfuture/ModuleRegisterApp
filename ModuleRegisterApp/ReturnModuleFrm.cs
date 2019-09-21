@@ -26,7 +26,7 @@ namespace ModuleRegisterApp
             InitializeComponent();
             this.uInfo = uInfo;
             uInfo.LoadModelData(ref model_cbx);
-            model_cbx.SelectedItem = 1;
+            model_cbx.SelectedIndex = 1;
         }
 
         /// <summary>
@@ -36,22 +36,29 @@ namespace ModuleRegisterApp
         /// <param name="e"></param>
         private void barcode_txt_Enter(object sender, KeyEventArgs e)
         {
+            if (barcode_txt.Text == "")
+                return;
+            
             result_lbl.Text = "";
             if (e.KeyCode != Keys.Enter) return;
-
+            int strLength = barcode_txt.Text.Length;
+            if (strLength < Check.minLength || strLength > Check.maxLength)
+            {
+                MessageBox.Show(string.Format("号码必须最少{0}位，最多{1}位", Check.minLength, Check.maxLength));
+                return;
+            }
             if (model_cbx.SelectedItem.ToString() == "")
             {
                 result_lbl.Text = "Error";
                 return;
             }
 
-            if (barcode_txt.Text.Length < 24)
-            {
-                result_lbl.Text = "Error";
-                return;
-            }
-
-            barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
+            //if (barcode_txt.Text.Length < 24)
+            //{
+            //    result_lbl.Text = "Error";
+            //    return;
+            //}
+            //barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
 
             if (IsExists(barcode_txt.Text.ToUpper()) == false)
             {
@@ -66,7 +73,8 @@ namespace ModuleRegisterApp
 			se.model = model_cbx.SelectedItem.ToString();
 			rInfo.serials.Add(se);
 			updateGridView();
-			barcode_txt.SelectAll();
+            barcode_txt.Text = "";
+            barcode_txt.SelectAll();
 		}
 
         /// <summary>

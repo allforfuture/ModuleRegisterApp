@@ -31,6 +31,8 @@ namespace ModuleRegisterApp
                         return "报废";
                     case 3:
                         return "借出Site";
+                    case 4:
+                        return "保留品";
                 }
                 return "";
             }

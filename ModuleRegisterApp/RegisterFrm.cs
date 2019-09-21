@@ -14,7 +14,7 @@ namespace ModuleRegisterApp
     {
         #region Initialize class object
         UserInfo uInfo = new UserInfo();
-        DBFactory dbFaci = new DBFactory();
+        DBFactory dbFac = new DBFactory();
         RecordInfo rInfo = new RecordInfo();
         ComMethod comMethod = new ComMethod();
         InfoPrint iPrint;
@@ -24,10 +24,12 @@ namespace ModuleRegisterApp
         {
             InitializeComponent();
             uInfo = u;
-            uInfo.LoadDeptData(ref dept_cbx);
+            //uInfo.LoadDeptData(ref dept_cbx);
+            dept_cbx.Items.AddRange(LoginFrm.deptArr);
             uInfo.LoadModelData(ref model_cbx);
             dept_cbx.SelectedItem = 0;
             model_cbx.SelectedIndex = 1;
+            dept_cbx.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -36,17 +38,36 @@ namespace ModuleRegisterApp
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void submit_btn_Click(object sender, EventArgs e)
-        {
-            if (rInfo.serials.Count <= 0)
+        {            
+            if (id_txt.Text == "")
+            {
+                MessageBox.Show("工号不能为空");
+                return;
+            }
+            else if (reason_txt.Text == "")
+            {
+                MessageBox.Show("原因不能为空");
+                return;
+            }
+            else if (dept_cbx.Text == "")
+            {
+                MessageBox.Show("部门不能为空");
+                return;
+            }
+            else if (name_txt.Text == "")
+            {
+                MessageBox.Show("姓名不能为空");
+                return;
+            }
+            else if (rInfo.serials.Count <= 0)
             {
                 result_lbl.Text = "No data for upload";
                 return;
             }
 
-            if (id_txt.Text == "" || name_txt.Text == ""  || dept_cbx.SelectedItem.ToString() == "" || reason_txt.Text == "") return;
             rInfo.record_id = uInfo.r_user;
             rInfo.site = site_txt.Text;
-            rInfo.holder_dept = dept_cbx.SelectedItem.ToString();
+            rInfo.holder_dept = dept_cbx.Text;//dept_cbx.SelectedItem.ToString();
             rInfo.holder_emp = id_txt.Text.ToUpper();
             rInfo.holder_name = name_txt.Text;
             rInfo.register_emp = uInfo.r_user;
@@ -56,7 +77,7 @@ namespace ModuleRegisterApp
             rInfo.statue = "N";
             rInfo.reason = reason_txt.Text;
             
-            bool flag=dbFaci.ExecuteObject(ref rInfo);
+            bool flag=dbFac.ExecuteObject(ref rInfo);
             if (flag == false)
             {
                 MessageBox.Show("提交失败！请检查数据是否有误");
@@ -74,20 +95,30 @@ namespace ModuleRegisterApp
         /// <param name="e"></param>
         private void barcode_txt_Enter(object sender,KeyEventArgs e)
         {
+            if (barcode_txt.Text == "")
+                return;
             result_lbl.Text = "";
             if (e.KeyCode != Keys.Enter) return;
+
+            int strLength = barcode_txt.Text.Length;
+            if (strLength < Check.minLength || strLength > Check.maxLength)
+            {
+                MessageBox.Show(string.Format("号码必须最少{0}位，最多{1}位", Check.minLength, Check.maxLength));
+                return;
+            }
 
             if (model_cbx.SelectedItem.ToString() == "")
             {
                 result_lbl.Text = "Error";
                 return;
             }
-            if (barcode_txt.Text.Length < 24)
-            {
-                result_lbl.Text = "Error";
-                return;
-            }
-            barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
+            //取消26位数的限制,可输入所有
+            //if (barcode_txt.Text.Length < 24)
+            //{
+            //    result_lbl.Text = "Error";
+            //    return;
+            //}
+            //barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
 
             if (IsExists(barcode_txt.Text.ToUpper()) == false)
             {
@@ -106,7 +137,9 @@ namespace ModuleRegisterApp
             se.model = model_cbx.SelectedItem.ToString();
             rInfo.serials.Add(se);
             updateGridView();
+            barcode_txt.Text = "";
             barcode_txt.SelectAll();
+
         }
 
         /// <summary>
@@ -169,7 +202,7 @@ namespace ModuleRegisterApp
             string sql = "select m.record_id,m.serial_cd,m.model,r.register_date,r.type,r.statue," +
                         " row_number() over(partition by serial_cd, model order by serial_cd, r.record_id desc) as num " +
                         " from t_module m,t_record r where m.record_id = r.record_id and substring(serial_cd,1,17) = '" + serial_cd.Substring(0,17) + "' limit 1";
-            dbFaci.ExecuteDataTable(sql, ref t);
+            dbFac.ExecuteDataTable(sql, ref t);
             if (t.Rows.Count > 0)
             {
                 if (t.Rows[0]["type"].ToString().Trim() == "0" || t.Rows[0]["type"].ToString().Trim() == "2")
@@ -193,7 +226,7 @@ namespace ModuleRegisterApp
                 case "KK04":
                     return true;    //不管控kk04
             }
-            dbFaci.ExcuteDataTableAOI(model, sql, ref t);
+            dbFac.ExcuteDataTableAOI(model, sql, ref t);
             if (t.Rows.Count > 0)
             {
                 return true;
@@ -204,12 +237,39 @@ namespace ModuleRegisterApp
         private void Print_Click(object sender,EventArgs e)
         {
             iPrint = new InfoPrint(rInfo);
-            iPrint.Print("借出登记");
+            iPrint.Print();
         }
 
-        private void barcode_txt_TextChanged(object sender, EventArgs e)
+        private void id_txt_KeyDown(object sender, KeyEventArgs e)
         {
+            //if (e.KeyCode != Keys.Enter) return;
+            //checkName();
+        }
 
+        private void id_txt_Leave(object sender, EventArgs e)
+        {
+            //if (id_txt.Text.Length<11) return;
+            //checkName();
+        }
+
+        void checkName()
+        {
+            //string sql = "Select user_name,user_dept From m_user Where user_no='" + id_txt.Text + "'";            
+            string sql = "Select user_name,dept From borrow_user Where user_id='" + id_txt.Text + "'";
+            DataTable dt = new DataTable();
+            dbFac.ExecuteDataTable(sql, ref dt);
+            if (dt.Rows.Count > 0)
+            {
+                name_txt.Text = dt.Rows[0]["user_name"].ToString();
+                dept_cbx.Text= dt.Rows[0]["dept"].ToString();
+                id_txt.Enabled = false;
+                barcode_txt.Enabled = true;
+            }
+            else
+            {
+                name_txt.Text = string.Empty;
+                MessageBox.Show("该用户没有此权限");
+            }
         }
     }
 }

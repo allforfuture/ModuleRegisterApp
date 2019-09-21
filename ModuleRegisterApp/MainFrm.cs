@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Configuration;
+
 namespace ModuleRegisterApp
 {
     public partial class MainFrm : Form
@@ -26,9 +28,11 @@ namespace ModuleRegisterApp
         public MainFrm(UserInfo u)
         {
             InitializeComponent();
+            Text = Text + "_" + Application.ProductVersion.ToString();
             uInfo = u;
-            uInfo.LoadDeptData(ref dept_combo);
-            if(u.r_dept=="MFG")
+            //uInfo.LoadDeptData(ref cboDept);
+            cboDept.Items.AddRange(LoginFrm.deptArr);
+            if (u.r_dept=="MFG")
             {
                 ToolStripMenuItem3.Enabled = false;
             }
@@ -37,7 +41,12 @@ namespace ModuleRegisterApp
 				//ToolStripMenuItem2.Enabled = false;
 				toolStripMenuItem1.Enabled = false;
 			}
-		}
+
+            cboDept.SelectedIndex = 0;
+            cboType.SelectedIndex = 0;
+            cboModel.Items.AddRange(ConfigurationManager.AppSettings["modelType"].ToString().Split(';'));
+            cboModel.SelectedIndex = 0;
+        }
 
         /// <summary>
         /// 点击查找的操作
@@ -46,53 +55,102 @@ namespace ModuleRegisterApp
         /// <param name="e"></param>
         private void search_btn_Click(object sender, EventArgs e)
         {
-			//	刚刚改了改t_record表里的字段出现的问题
-			//1查询				OK
-			//2查询之后的open	ok
-			//优化：
-			//sql语句变成总(选择字段)分（条件筛选）机构
-
-			Sumary_dgv.Columns.Clear();
+            Sumary_dgv.Columns.Clear();
 			bool IsQuery = false;
-			string sql= "select record_id,site,register_date,holder_dept,holder_name,type,(select count(serial_cd) from t_module where record_id=t_record.record_id) as qty,category_cd";
-			DataTable t1 = new DataTable();
-			if (dept_rbt.Checked==true)
-			{
-				sql += " from t_record where holder_dept = '" + dept_combo.SelectedItem.ToString() + "'";
-				IsQuery = true;
-			}
-			else if (dateShift_rbt.Checked==true)
-			{
-				sql += " from t_record where register_date >= '" + dateTimePicker1.Value.ToString("yyyy-MM-dd 00:00:00") + "' and register_date<= '" + dateTimePicker2.Value.ToString("yyyy-MM-dd 23:59:00") + "'";
-				IsQuery = true;
-			}
-			else if(module_rbt.Checked==true)
+            DataTable t1 = new DataTable();
+            StringBuilder sql = new StringBuilder();
+            sql.AppendLine("select rr.record_id,rr.site,rr.register_date,rr.holder_dept,rr.holder_name,rr.type,");
+            sql.AppendLine("count(mm.serial_cd) as qty,rr.category_cd,mm.model");
+            sql.AppendLine("from t_record as rr");
+            sql.AppendLine("left join t_module as mm on rr.record_id = mm.record_id");
+            sql.AppendLine("left join t_carton as cc on mm.record_id=cc.record_id");
+
+
+            if (chkDept.Checked)
             {
-                sql +=" from t_record where record_id in(select record_id from t_module where substring(serial_cd,1,17) = '" + module_txt.Text.Substring(0,17) + "' )";
-				IsQuery = true;
-			}
-			else if (carton_rbt.Checked == true)
-			{
-				//特殊：要对比t_record r,t_carton c两个表sql语句和其他不相同
-				sql = "select r.record_id,r.site,r.register_date,r.holder_dept,r.holder_name,r.type,(select count(serial_cd) from t_module where record_id=r.record_id) as qty,category_cd" +
-				" from t_record r,t_carton c where r.record_id=c.record_id and c.carton_id='" + carton_txt.Text + "'";
-				IsQuery = true;
-			}
-			else if(RecordID_rbt.Checked==true)
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("rr.holder_dept = '{0}'", cboDept.Text));
+                IsQuery = true;
+            }
+
+            if (chkModule.Checked)
             {
-                sql +=" from t_record where record_id='" + RecordID_txt.Text + "'";
-				IsQuery = true;
-			}
-			else if (meno_rbt.Checked==true)
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("mm.serial_cd = '{0}'", module_txt.Text));
+                IsQuery = true;
+            }
+            if (chkRecordID.Checked)
             {
-				sql+= " from t_record where category_cd='" + Memo_txt.Text + "'";
-				IsQuery = true;
-			}
-			if (IsQuery == true)
-			{
-				sql += " and category_id!='B'";
-				dbFac.ExecuteDataTable(sql, ref t1);
-			}
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("rr.record_id='{0}'", RecordID_txt.Text));
+                IsQuery = true;
+            }
+
+            if (chkDateShift.Checked)
+            {
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("rr.register_date >= '{0}' and rr.register_date<'{1}'"
+                    , dateTimePicker1.Value.ToString("yyyy-MM-dd"), dateTimePicker2.Value.AddDays(1).ToString("yyyy-MM-dd")));
+                IsQuery = true;
+            }
+
+            if (chkCartonID.Checked)
+            {
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("cc.carton_id='{0}'", carton_txt.Text));
+                IsQuery = true;
+            }
+
+
+            if (chkMemo.Checked)
+            {
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("rr.category_cd like '%{0}%'", Memo_txt.Text));
+                IsQuery = true;
+            }
+
+            if (chkType.Checked)
+            {
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("rr.type = '{0}'", cboType.Text.Substring(0,1)));
+                IsQuery = true;
+            }
+            if (chkModel.Checked)
+            {
+                if (IsQuery)
+                    sql.AppendLine("and");
+                else
+                    sql.AppendLine("where");
+                sql.AppendLine(string.Format("mm.model = '{0}'", cboModel.Text));
+                IsQuery = true;
+            }
+
+            if (IsQuery == true)
+            {                
+                sql.AppendLine("group by rr.record_id,rr.site,rr.register_date,rr.holder_dept,rr.holder_name,rr.type,rr.category_cd,mm.model");
+                dbFac.ExecuteDataTable(sql.ToString(), ref t1);
+            }
             if (t1 == null || t1.Rows.Count <= 0) return;
             LoadDataGridview(t1);
         }
@@ -146,6 +204,9 @@ namespace ModuleRegisterApp
                             break;
                         case "3":
                             e.Value = "借出Site";
+                            break;
+                        case "4":
+                            e.Value = "保留品";
                             break;
                     }
                 }
@@ -203,7 +264,6 @@ namespace ModuleRegisterApp
 
                 InfoFrm iFrm = new InfoFrm(rInfo);
                 iFrm.Show();
-
             }
         }
 
@@ -349,7 +409,7 @@ namespace ModuleRegisterApp
 			bool isOpen = false;
 			foreach (Form f in Application.OpenForms)
 			{
-				if (f.Name == "ScrapFrm")
+				if (f.Name == "ScrapFrm2")
 				{
 					isOpen = true;
 				}
@@ -360,5 +420,39 @@ namespace ModuleRegisterApp
 				sFrm2.Show();
 			}
 		}
-	}
+
+        private void ReservationInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "ReservationIn")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                ReservationIn form = new ReservationIn(uInfo);
+                form.Show();
+            }
+        }
+
+        private void ReservationInOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "ReservationOut")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                ReservationOut form = new ReservationOut(uInfo);
+                form.Show();
+            }
+        }
+    }
 }

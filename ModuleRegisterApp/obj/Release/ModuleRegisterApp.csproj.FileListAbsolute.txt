@@ -23,3 +23,219 @@ D:\code\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
 D:\code\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojResolveAssemblyReference.cache
 D:\code\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Updater.dll
 D:\code\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Updater.pdb
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.Cache
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojResolveAssemblyReference.cache
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojResolveAssemblyReference.cache
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.Cache
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\YEYINXU\Desktop\new\20190110\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\TempCode\20190112\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\TempCode\20190112 - 副本\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹\20190522\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\临时回收站\新建文件夹 (2)\20190617\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Verson.xml
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.config
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MessageFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.OutSiteRegister.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.RegisterFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Properties.Resources.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationOut.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReturnModuleFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationIn.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm2.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm1.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.GenerateResource.cache
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CoreCompileInputs.cache
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe.manifest
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.application
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csproj.CopyComplete
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb

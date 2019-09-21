@@ -16,7 +16,7 @@ namespace ModuleRegisterApp
     {
         DBFactory dbFac = new DBFactory();
         public UserInfo uInfo = new UserInfo();
-        
+        public static string[] deptArr;
 
         public LoginFrm()
         {
@@ -27,23 +27,26 @@ namespace ModuleRegisterApp
 
         private void LoadCombo()
         {
+            List<string> dept=new List<string>();
             DataTable t1 = new DataTable();
-            dbFac.ExecuteDataTable("select distinct(dept) from t_user", ref t1);
+            dbFac.ExecuteDataTable("select distinct(dept) from t_user order by dept desc", ref t1);
             if(t1.Rows.Count>0)
             {
                 for(int i=0;i<t1.Rows.Count;i++)
                 {
-                    dep_cbx.Items.Add(t1.Rows[i]["dept"].ToString().Trim());
+                    //dep_cbx.Items.Add();
+                    dept.Add(t1.Rows[i]["dept"].ToString().Trim());
                 }
-                dep_cbx.SelectedIndex = 0;
+                deptArr = dept.ToArray();
+                dep_cbx.Items.AddRange(deptArr);
+                //dep_cbx.SelectedIndex = 1;
+                dep_cbx.Text = "PD";
             }
         }
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-			user_txt.Text = "20181115110";
-			pw_txt.Text = "140821";
-			if (dep_cbx.SelectedItem == null || user_txt.Text == "" || pw_txt.Text == "") return;
+            if (dep_cbx.SelectedItem == null || user_txt.Text == "" || pw_txt.Text == "") return;
             string sql = "select user_id,dept,user_name from t_user where user_id='"+ user_txt.Text +"' and pass='"+ pw_txt.Text +"' and dept='"+ dep_cbx.SelectedItem.ToString()+"'";
             DataTable t1 = new DataTable();
             dbFac.ExecuteDataTable(sql,ref t1);
@@ -86,7 +89,7 @@ namespace ModuleRegisterApp
 
         private void dep_cbx_SelectedIndexChanged(object sender, EventArgs e)
         {
-            pw_txt.Text = "";
+            //pw_txt.Text = "";
             user_txt.Select();
         }
     }

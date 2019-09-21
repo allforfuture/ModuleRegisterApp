@@ -1,0 +1,51 @@
+//马达登记（0借出1还入2报废3厂外借出4保留品）
+
+//借出
+rInfo.type = 0;
+rInfo.statue = "N";
+
+//还入
+rInfo.type = 1;
+rInfo.statue = "N";
+
+//报废
+rInfo.type = 2;
+switch (cbx_reason.SelectedItem.ToString())
+{
+	case "正常生产报废":
+		rinfo.statue = "g";
+		break;
+	case "半成品报废":
+		rinfo.statue = "h";
+		break;
+	case "客户返品报废":
+		rinfo.statue = "c";
+		break;
+	case "培训小组报废":
+		rinfo.statue = "e";
+		break;
+	case "制造报废前扫描":
+		rinfo.statue = "b";
+		break;
+	case "实验品保存":
+		rinfo.statue = "q";
+		break;
+	case "外观不良报废":
+		rinfo.statue = "a";
+		break;
+}
+
+//厂外借出（取消功能）
+rInfo.type = 3;
+
+//保留品
+rInfo.type = 4;
+switch (cbx_reason.SelectedItem.ToString())
+{
+	case "保留品登记":
+		rInfo.statue = "I";
+		break;
+	case "保留品取出":
+		rInfo.statue = "O";
+		break;
+}

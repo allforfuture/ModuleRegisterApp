@@ -96,7 +96,10 @@ namespace ModuleRegisterApp
 				case "实验品保存":
 					rInfo.statue = "Q";
 					break;
-			}
+                case "外观不良报废":
+                    rInfo.statue = "A";
+                    break;
+            }
 
 
             rInfo.reason = cbx_reason.SelectedItem.ToString();
@@ -125,7 +128,7 @@ namespace ModuleRegisterApp
                 if(DialogResult==DialogResult.Yes)
                 {
                     InfoPrint iPrint = new InfoPrint(rInfo);
-                    iPrint.Print("报废");
+                    iPrint.Print();
                 }
                 rInfo = null;
                 this.Close();
@@ -139,24 +142,33 @@ namespace ModuleRegisterApp
         /// <param name="e"></param>
         private void barcode_txt_Enter(object sender, KeyEventArgs e)
         {
+            if (barcode_txt.Text == "")
+                return;
             result_lbl.Text = "";
             if (e.KeyCode != Keys.Enter) return;
-
+            int strLength = barcode_txt.Text.Length;
+            if (strLength < Check.minLength || strLength > Check.maxLength)
+            {
+                MessageBox.Show(string.Format("号码必须最少{0}位，最多{1}位", Check.minLength, Check.maxLength));
+                return;
+            }
             if (model_cbx.SelectedItem.ToString() == "")
             {
                 result_lbl.Text = "Error";
                 return;
             }
 
-            if (barcode_txt.Text.Length < 24)
-            {
-                result_lbl.Text = "Error";
-                return;
-            }
-            barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
-			Check a = new Check();
-			//if (a.IsContinue(barcode_txt.Text) == false) { return; }
-			if (IsExists(barcode_txt.Text.ToUpper()) == false)
+            //if (barcode_txt.Text.Length < 24)
+            //{
+            //    result_lbl.Text = "Error";
+            //    return;
+            //}
+            //barcode_txt.Text = barcode_txt.Text.Substring(0, 24);
+
+            CheckAPI APIcheck = new CheckAPI();
+            string category = APIcheck.modelCategory(barcode_txt.Text, model_cbx.SelectedItem.ToString());
+            
+            if (IsExists(barcode_txt.Text.ToUpper()) == false)
             {
                 result_lbl.Text = "重复Error";
                 return;
@@ -171,9 +183,10 @@ namespace ModuleRegisterApp
             serial se = new serial();
             se.serial_cd = barcode_txt.Text.ToUpper();
             se.model = model_cbx.SelectedItem.ToString();
-			se.category = cbx_reason.SelectedItem.ToString();
-			rInfo.serials.Add(se);
+			se.category = category;
+            rInfo.serials.Add(se);
             updateGridView();
+            barcode_txt.Text = "";
             barcode_txt.SelectAll();
 
         }

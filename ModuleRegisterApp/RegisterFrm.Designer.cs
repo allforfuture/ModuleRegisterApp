@@ -105,7 +105,7 @@
             this.site_txt.Name = "site_txt";
             this.site_txt.Size = new System.Drawing.Size(100, 21);
             this.site_txt.TabIndex = 15;
-            this.site_txt.Text = "A-1";
+            this.site_txt.Text = "M-1";
             // 
             // label7
             // 
@@ -138,7 +138,7 @@
             // 
             this.dept_cbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dept_cbx.FormattingEnabled = true;
-            this.dept_cbx.Location = new System.Drawing.Point(68, 25);
+            this.dept_cbx.Location = new System.Drawing.Point(68, 29);
             this.dept_cbx.Name = "dept_cbx";
             this.dept_cbx.Size = new System.Drawing.Size(100, 20);
             this.dept_cbx.TabIndex = 11;
@@ -204,6 +204,8 @@
             this.id_txt.Name = "id_txt";
             this.id_txt.Size = new System.Drawing.Size(100, 23);
             this.id_txt.TabIndex = 4;
+            this.id_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.id_txt_KeyDown);
+            this.id_txt.Leave += new System.EventHandler(this.id_txt_Leave);
             // 
             // submit_btn
             // 
@@ -242,7 +244,6 @@
             this.barcode_txt.Name = "barcode_txt";
             this.barcode_txt.Size = new System.Drawing.Size(273, 26);
             this.barcode_txt.TabIndex = 2;
-            this.barcode_txt.TextChanged += new System.EventHandler(this.barcode_txt_TextChanged);
             this.barcode_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.barcode_txt_Enter);
             // 
             // moduleList_dgv
@@ -288,12 +289,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox qty_txt;
         private System.Windows.Forms.TextBox barcode_txt;
-        private System.Windows.Forms.ComboBox dept_cbx;
         private System.Windows.Forms.TextBox reason_txt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox site_txt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label result_lbl;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox dept_cbx;
     }
 }

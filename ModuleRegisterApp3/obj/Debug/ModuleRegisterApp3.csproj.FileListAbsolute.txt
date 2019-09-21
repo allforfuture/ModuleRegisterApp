@@ -40,3 +40,14 @@ D:\FYH-2018-05-31\NewV\5.29ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\Module
 D:\FYH-2018-05-31\NewV\5.29ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3_MarkupCompile.lref
 D:\FYH-2018-05-31\NewV\5.29ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3.exe
 D:\FYH-2018-05-31\NewV\5.29ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3.pdb
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3.csprojAssemblyReference.cache
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\Login.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\MainWin.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\MainWindow.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\Window1.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\App.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3_MarkupCompile.cache
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3_MarkupCompile.lref
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3.exe
+D:\code\ModuleRegisterApp\ModuleRegisterApp\ModuleRegisterApp3\obj\Debug\ModuleRegisterApp3.pdb

@@ -42,6 +42,9 @@ namespace ModuleRegisterApp
                 case 3:
                     type_txt.Text = "借出Site";
                     break;
+                case 4:
+                    type_txt.Text = "保留品";
+                    break;
             }
             foreach (serial se in recodeInfo.serials)
             {
@@ -80,21 +83,7 @@ namespace ModuleRegisterApp
         private void submit_btn_Click(object sender, EventArgs e)
         {
             InfoPrint iPrint = new InfoPrint(rInfo);
-            switch (rInfo.type)
-            {
-                case 0:
-                    iPrint.Print("借出登记");
-                    break;
-                case 1:
-                    iPrint.Print("还入登记");
-                    break;
-                case 2:
-                    iPrint.Print("报废登记");
-                    break;
-                case 3:
-                    iPrint.Print("借出登记");
-                    break;
-            }
+            iPrint.Print();
         }
     }
 }

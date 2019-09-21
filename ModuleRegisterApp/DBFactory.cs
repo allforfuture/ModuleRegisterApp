@@ -98,9 +98,11 @@ namespace ModuleRegisterApp
                     tran.Commit();
                     return true;
                 }
-                catch
+                catch(Exception ex)
                 {
                     tran.Rollback();
+                    System.Windows.Forms.MessageBox.Show(ex.Message,"数据库增加记录失败：",
+                        System.Windows.Forms.MessageBoxButtons.OK,System.Windows.Forms.MessageBoxIcon.Error);
                     return false;
                 }
             }
@@ -113,7 +115,8 @@ namespace ModuleRegisterApp
             {
                 con.Open();
                 string sql0 = "LOCK TABLE t_record IN ACCESS EXCLUSIVE MODE";
-                string sql1 = "select MAX(record_id) from t_record where register_date >='" + DateTime.Now.ToString("yyyy/MM/dd 00:00:00") + "'";
+                //string sql1 = "select MAX(record_id) from t_record where register_date >='" + DateTime.Now.ToString("yyyy/MM/dd 00:00:00") + "'";
+                string sql1 = "select MAX(record_id) from t_record where register_date >=current_date";
                 NpgsqlTransaction tran = con.BeginTransaction();
                 try
                 {
@@ -124,7 +127,10 @@ namespace ModuleRegisterApp
 					newid = cmd.ExecuteScalar().ToString();
                     if(newid==string.Empty)
                     {
-                        newid = DateTime.Now.ToString("yyyyMMdd") +"P"+ "001";
+                        //不取电脑的时间来做ID，以为要是电脑时间
+                        //newid = DateTime.Now.ToString("yyyyMMdd") +"P"+ "001";
+                        cmd = new NpgsqlCommand("select to_char(current_date,'yyyyMMddP001')", con);
+                        newid = cmd.ExecuteScalar().ToString();
                     }
                     else
                     {

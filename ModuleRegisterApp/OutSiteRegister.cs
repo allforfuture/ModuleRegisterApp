@@ -200,7 +200,7 @@ namespace ModuleRegisterApp
         private void Print_Click(object sender, EventArgs e)
         {
             iPrint = new InfoPrint(rInfo);
-            iPrint.Print("借出登记");
+            iPrint.Print();
         }
 
     }

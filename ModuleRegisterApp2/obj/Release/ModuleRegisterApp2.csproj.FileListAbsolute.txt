@@ -1,0 +1,11 @@
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.csprojResolveAssemblyReference.cache
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.BellowFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.InfoFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.LoginFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.MainFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.Properties.Resources.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.ReturnFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.ScrapCartonFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.ScrapFrm.resources
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.csproj.GenerateResource.Cache
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp2\obj\Release\ModuleRegisterApp2.csproj.CoreCompileInputs.cache

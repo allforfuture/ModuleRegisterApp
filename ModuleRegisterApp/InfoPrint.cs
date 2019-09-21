@@ -28,23 +28,15 @@ namespace ModuleRegisterApp
             rInfo = info;
         }
 
-        public void Print(string PageTitle)
+        public void Print()
         {
-            m_PageTitle = PageTitle;
-            if(m_print==null)
+            if (m_print == null)
             {
                 m_print = new PrintDocument();
-                //m_print.DefaultPageSettings.PaperSize = new PaperSize("Custum", 1500, 300);
-                //PaperSize ps = new PaperSize();
-                
-                //ps.RawKind =(int)PaperKind.B6Jis;
-                
-                
-                System.Windows.Forms.PrintDialog printDialog1 = new System.Windows.Forms.PrintDialog();
+                PrintDialog printDialog1 = new PrintDialog();
                 printDialog1.Document = m_print;
-                if (DialogResult.OK== printDialog1.ShowDialog())
+                if (DialogResult.OK == printDialog1.ShowDialog())
                 {
-                    //m_print.DefaultPageSettings.PaperSize = ps;
                     m_print.PrintPage += new PrintPageEventHandler(one_PrintPage);
                     m_print.Print();
                 }
@@ -153,7 +145,7 @@ namespace ModuleRegisterApp
         private void one_PrintPage(object send,PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
-            int r1=2, r2=62, r3=142,r4=182,r5=200;
+            int r1=2, r2=62, r3=142,r4=190,r5=200;
             int c1 = 3, c2 = 43, c3 = 83,c4=123,c5=163,c6=203;
 
             try
@@ -199,8 +191,8 @@ namespace ModuleRegisterApp
             }
             catch(Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show("Print failed." + System.Environment.NewLine + ex.Message,
-                   "Print Result", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                MessageBox.Show("Print failed." + System.Environment.NewLine + ex.Message,
+                   "Print Result", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

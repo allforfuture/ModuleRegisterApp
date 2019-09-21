@@ -1,0 +1,9 @@
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\Login.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\MainWin.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\MainWindow.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\Window1.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\App.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\ModuleRegisterApp3_MarkupCompile.cache
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\ModuleRegisterApp3_MarkupCompile.lref
+C:\Users\YEYINXU\Desktop\ModuleRegisterApp\20190109\ModuleRegisterApp\ModuleRegisterApp3\obj\Release\ModuleRegisterApp3.csprojResolveAssemblyReference.cache

@@ -19,15 +19,16 @@ namespace ModuleRegisterApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             LoginFrm lFrm = new LoginFrm();
-            IsUpdateEnable isupdate = new IsUpdateEnable();
-            if (isupdate.bFlag)
-            {
-                System.Diagnostics.Process.Start(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AutoUpdater_Simple.exe"));
-                Application.Exit();
-            }
-            else
-            {
+            //IsUpdateEnable isupdate = new IsUpdateEnable();
+            //if (isupdate.bFlag)
+            //{
+            //    System.Diagnostics.Process.Start(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AutoUpdater_Simple.exe"));
+            //    Application.Exit();
+            //}
+            //else
+            //{
                 MainFrm mFrm;
                 DialogResult dr = lFrm.ShowDialog();
                 if (dr == DialogResult.OK)
@@ -35,7 +36,7 @@ namespace ModuleRegisterApp
                     mFrm = new MainFrm(lFrm.uInfo);
                     Application.Run(mFrm);
                 }
-            }
+            //}
         }
     }
 }
