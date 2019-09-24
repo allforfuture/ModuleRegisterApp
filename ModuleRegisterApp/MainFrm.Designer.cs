@@ -430,6 +430,7 @@
             this.ReservationInOutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.O)));
             this.ReservationInOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ReservationInOutToolStripMenuItem.Text = "保留品取出";
+            this.ReservationInOutToolStripMenuItem.Visible = false;
             this.ReservationInOutToolStripMenuItem.Click += new System.EventHandler(this.ReservationInOutToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem3
@@ -445,7 +446,7 @@
             // 
             this.ScrapToolStripMenuItem.Name = "ScrapToolStripMenuItem";
             this.ScrapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ScrapToolStripMenuItem.Text = "报废";
             this.ScrapToolStripMenuItem.Click += new System.EventHandler(this.ScrapToolStripMenuItem_Click);
             // 
@@ -453,7 +454,7 @@
             // 
             this.ScrapCartonToolStripMenuItem.Name = "ScrapCartonToolStripMenuItem";
             this.ScrapCartonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ScrapCartonToolStripMenuItem.Text = "报废|装箱";
             this.ScrapCartonToolStripMenuItem.Click += new System.EventHandler(this.ScrapCartonToolStripMenuItem_Click);
             // 
@@ -469,7 +470,7 @@
             // 
             this.报废ToolStripMenuItem.Name = "报废ToolStripMenuItem";
             this.报废ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.报废ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.报废ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.报废ToolStripMenuItem.Text = "实验品保存";
             this.报废ToolStripMenuItem.Click += new System.EventHandler(this.报废ToolStripMenuItem_Click);
             // 

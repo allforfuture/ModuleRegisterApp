@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbx_reason = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.result_lbl = new System.Windows.Forms.Label();
             this.site_txt = new System.Windows.Forms.TextBox();
@@ -42,6 +41,7 @@
             this.qty_txt = new System.Windows.Forms.TextBox();
             this.barcode_txt = new System.Windows.Forms.TextBox();
             this.moduleList_dgv = new System.Windows.Forms.DataGridView();
+            this.reason_txt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moduleList_dgv)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.cbx_reason);
+            this.groupBox1.Controls.Add(this.reason_txt);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.result_lbl);
             this.groupBox1.Controls.Add(this.site_txt);
@@ -63,23 +63,10 @@
             this.groupBox1.Controls.Add(this.barcode_txt);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(617, 110);
+            this.groupBox1.Size = new System.Drawing.Size(617, 165);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "信息登记";
-            // 
-            // cbx_reason
-            // 
-            this.cbx_reason.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_reason.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbx_reason.FormattingEnabled = true;
-            this.cbx_reason.Items.AddRange(new object[] {
-            "保留品登记"});
-            this.cbx_reason.Location = new System.Drawing.Point(212, 28);
-            this.cbx_reason.Name = "cbx_reason";
-            this.cbx_reason.Size = new System.Drawing.Size(151, 24);
-            this.cbx_reason.TabIndex = 19;
-            this.cbx_reason.SelectedIndexChanged += new System.EventHandler(this.cbx_reason_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -120,7 +107,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(178, 35);
+            this.label6.Location = new System.Drawing.Point(17, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 12);
             this.label6.TabIndex = 12;
@@ -129,7 +116,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 81);
+            this.label5.Location = new System.Drawing.Point(17, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 12);
             this.label5.TabIndex = 10;
@@ -138,7 +125,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 35);
+            this.label4.Location = new System.Drawing.Point(17, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 12);
             this.label4.TabIndex = 9;
@@ -189,12 +176,20 @@
             this.moduleList_dgv.AllowUserToAddRows = false;
             this.moduleList_dgv.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.moduleList_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.moduleList_dgv.Location = new System.Drawing.Point(12, 128);
+            this.moduleList_dgv.Location = new System.Drawing.Point(12, 183);
             this.moduleList_dgv.Name = "moduleList_dgv";
             this.moduleList_dgv.RowTemplate.Height = 23;
-            this.moduleList_dgv.Size = new System.Drawing.Size(608, 451);
+            this.moduleList_dgv.Size = new System.Drawing.Size(608, 396);
             this.moduleList_dgv.TabIndex = 2;
             this.moduleList_dgv.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.moduleList_dgv_UserDeletingRow);
+            // 
+            // reason_txt
+            // 
+            this.reason_txt.Location = new System.Drawing.Point(64, 110);
+            this.reason_txt.Multiline = true;
+            this.reason_txt.Name = "reason_txt";
+            this.reason_txt.Size = new System.Drawing.Size(299, 49);
+            this.reason_txt.TabIndex = 20;
             // 
             // ReservationIn
             // 
@@ -232,6 +227,6 @@
         private System.Windows.Forms.DataGridView moduleList_dgv;
         private System.Windows.Forms.Label result_lbl;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbx_reason;
-	}
+        private System.Windows.Forms.TextBox reason_txt;
+    }
 }

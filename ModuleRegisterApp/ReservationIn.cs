@@ -36,7 +36,6 @@ namespace ModuleRegisterApp
             this.uInfo = u;
             uInfo.LoadModelData(ref model_cbx);
             model_cbx.SelectedIndex = 1;
-            cbx_reason.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -61,20 +60,10 @@ namespace ModuleRegisterApp
             rInfo.register_date = DateTime.Now;
             rInfo.register_name = uInfo.r_username;
             rInfo.type = 4;
-            //rInfo.statue = "N";
-
-            switch (cbx_reason.SelectedItem.ToString())
-            {
-                case "保留品登记":
-                    rInfo.statue = "I";
-                    break;
-                case "保留品取出":
-                    rInfo.statue = "O";
-                    break;
-            }
+            rInfo.statue = "I";
 
 
-            rInfo.reason = cbx_reason.SelectedItem.ToString();
+            rInfo.reason = reason_txt.Text; ;
            
             MessageFrm mesFrm = new MessageFrm();
             mesFrm.label1.Text = "是否确认保留品登记！";
@@ -291,14 +280,5 @@ namespace ModuleRegisterApp
             }
             qty_txt.Text = rInfo.serials.Count.ToString();
         }
-
-		private void cbx_reason_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			string test=e.ToString();
-			test=cbx_reason.SelectedIndex.ToString();
-			barcode_txt.Text = qty_txt.Text = null;
-			rInfo.serials.Clear();
-			moduleList_dgv.Columns.Clear();
-		}
 	}
 }

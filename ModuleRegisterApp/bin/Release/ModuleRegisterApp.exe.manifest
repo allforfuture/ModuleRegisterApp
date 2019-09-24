@@ -4,7 +4,7 @@
   <description asmv2:iconFile="bitbug_favicon (3).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ModuleRegisterApp" version="2.0.920.1500" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ModuleRegisterApp" version="2.0.924.1830" language="neutral" processorArchitecture="msil" />
     <commandLine file="ModuleRegisterApp.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ModuleRegisterApp.exe" size="108032">
-      <assemblyIdentity name="ModuleRegisterApp" version="2.0.920.1500" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ModuleRegisterApp.exe" size="107520">
+      <assemblyIdentity name="ModuleRegisterApp" version="2.0.924.1830" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>x7OIyIHkpxjACDxCj+wqoL0tyHLDdgZ/TyWaducvupg=</dsig:DigestValue>
+        <dsig:DigestValue>BhMg8PsajUZjXQ6CV97iYPAiaMyL0xZ2YMGftFsfoWE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
