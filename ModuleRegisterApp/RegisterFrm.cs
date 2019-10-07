@@ -28,7 +28,6 @@ namespace ModuleRegisterApp
             dept_cbx.Items.AddRange(LoginFrm.deptArr);
             uInfo.LoadModelData(ref model_cbx);
             dept_cbx.SelectedItem = 0;
-            model_cbx.SelectedIndex = 1;
             dept_cbx.SelectedIndex = 0;
         }
 

@@ -144,6 +144,12 @@
     <Compile Include="ReturnModuleFrm.Designer.cs">
       <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScrapBigCartonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapBigCartonFrm.Designer.cs">
+      <DependentUpon>ScrapBigCartonFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScrapCartonFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReturnModuleFrm.resx">
       <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapBigCartonFrm.resx">
+      <DependentUpon>ScrapBigCartonFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScrapCartonFrm.resx">
       <DependentUpon>ScrapCartonFrm.cs</DependentUpon>

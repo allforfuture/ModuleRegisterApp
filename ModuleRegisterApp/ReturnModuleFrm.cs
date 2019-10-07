@@ -26,7 +26,6 @@ namespace ModuleRegisterApp
             InitializeComponent();
             this.uInfo = uInfo;
             uInfo.LoadModelData(ref model_cbx);
-            model_cbx.SelectedIndex = 1;
         }
 
         /// <summary>

@@ -69,6 +69,7 @@
             this.ScrapCartonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.报废ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ScrapPalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Sumary_dgv)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -437,7 +438,8 @@
             // 
             this.ToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ScrapToolStripMenuItem,
-            this.ScrapCartonToolStripMenuItem});
+            this.ScrapCartonToolStripMenuItem,
+            this.ScrapPalletToolStripMenuItem});
             this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
             this.ToolStripMenuItem3.Size = new System.Drawing.Size(44, 21);
             this.ToolStripMenuItem3.Text = "仓库";
@@ -446,7 +448,7 @@
             // 
             this.ScrapToolStripMenuItem.Name = "ScrapToolStripMenuItem";
             this.ScrapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ScrapToolStripMenuItem.Text = "报废";
             this.ScrapToolStripMenuItem.Click += new System.EventHandler(this.ScrapToolStripMenuItem_Click);
             // 
@@ -454,7 +456,7 @@
             // 
             this.ScrapCartonToolStripMenuItem.Name = "ScrapCartonToolStripMenuItem";
             this.ScrapCartonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ScrapCartonToolStripMenuItem.Text = "报废|装箱";
             this.ScrapCartonToolStripMenuItem.Click += new System.EventHandler(this.ScrapCartonToolStripMenuItem_Click);
             // 
@@ -470,9 +472,16 @@
             // 
             this.报废ToolStripMenuItem.Name = "报废ToolStripMenuItem";
             this.报废ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.报废ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.报废ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.报废ToolStripMenuItem.Text = "实验品保存";
             this.报废ToolStripMenuItem.Click += new System.EventHandler(this.报废ToolStripMenuItem_Click);
+            // 
+            // ScrapPalletToolStripMenuItem
+            // 
+            this.ScrapPalletToolStripMenuItem.Name = "ScrapPalletToolStripMenuItem";
+            this.ScrapPalletToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapPalletToolStripMenuItem.Text = "报废|装大箱";
+            this.ScrapPalletToolStripMenuItem.Click += new System.EventHandler(this.ScrapPalletToolStripMenuItem_Click);
             // 
             // MainFrm
             // 
@@ -538,5 +547,6 @@
         private System.Windows.Forms.ComboBox cboModel;
         private System.Windows.Forms.ToolStripMenuItem ReservationInToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ReservationInOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ScrapPalletToolStripMenuItem;
     }
 }

@@ -23,6 +23,7 @@ namespace ModuleRegisterApp
             InitializeComponent();
             LoadCombo();
             user_txt.SelectAll();
+            dep_cbx.Text = "PD";
         }
 
         private void LoadCombo()

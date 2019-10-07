@@ -30,11 +30,12 @@ namespace ModuleRegisterApp
         {
 			string[] modelType = ConfigurationManager.AppSettings["modelType"].ToString().Split(';');
 			obj.Items.AddRange(modelType);
-			//obj.Items.Add("KK04");
-			//obj.Items.Add("KK06");
-			//obj.Items.Add("KK07");
-			//obj.Items.Add("KK08");
-			//obj.Items.Add("KK09");
-		}
+            obj.Text = ConfigurationManager.AppSettings["modelTypeDefault"];
+            //obj.Items.Add("KK04");
+            //obj.Items.Add("KK06");
+            //obj.Items.Add("KK07");
+            //obj.Items.Add("KK08");
+            //obj.Items.Add("KK09");
+        }
     }
 }

@@ -89,10 +89,10 @@ namespace ModuleRegisterApp
 		private void Record_txt_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode != Keys.Enter) return;
-
-			if (Record_txt.Text.Length != 12)
+            lblErr.Text = "";
+            if (Record_txt.Text.Length != 12)
 			{
-				err_lbl.Text = "Please check the record length!";
+				lblErr.Text = "Please check the record length!";
 				return;
 			}
 
@@ -108,19 +108,19 @@ namespace ModuleRegisterApp
 
 			if (t1 == null || t1.Rows.Count <= 0)
 			{
-				err_lbl.Text = "Not found the record info!";
+				lblErr.Text = "Not found the record info!";
 				return;
 			}
-
+            //是否重复输入
 			if (!IsExists(Record_txt.Text.Trim().ToUpper()))
 			{
-				err_lbl.Text = "The record id is had add!";
+				lblErr.Text = "The record id is had add!";
 				return;
 			}
 			//不是第一次输入且不model不相同就返回报错
 			if (t1.Rows[0]["model"].ToString() != model_txt.Text && model_txt.Text != string.Empty)
 			{
-				err_lbl.Text = "Can't add different model !";
+				lblErr.Text = "Can't add different model !";
 				return;
 			}
 			string record_id = Record_txt.Text.Trim().ToUpper();
@@ -144,12 +144,10 @@ namespace ModuleRegisterApp
 			}
 			else
 			{
-				err_lbl.Text = "Unload to server!";
+				lblErr.Text = "Unload to server!";
 				return;
 			}
-
-
-		}
+        }
 
 		/// <summary>
 		/// 判断记录号是否有重复
@@ -179,7 +177,7 @@ namespace ModuleRegisterApp
 		/// <param name="e"></param>
 		private void NewCarton_btn_Click(object sender, EventArgs e)
 		{
-			string tmp = dbFaci.GetNewCartonId();
+            string tmp = dbFaci.GetNewCartonId("carton");
 			Carton_txt.Text = tmp;
 			Carton_txt.Enabled = false;
 			Record_txt.Enabled = true;
@@ -226,10 +224,10 @@ namespace ModuleRegisterApp
 			if (dtRecord != null)
 			{
 				dataGridView1.DataSource = dtRecord;
-				dataGridView1.Columns[0].DataPropertyName = "record_id";
-				dataGridView1.Columns[1].DataPropertyName = "type";
-				dataGridView1.Columns[2].DataPropertyName = "qty";
-				dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                //dataGridView1.Columns[0].DataPropertyName = "record_id";
+                //dataGridView1.Columns[1].DataPropertyName = "type";
+                //dataGridView1.Columns[2].DataPropertyName = "qty";
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 			}
 		}
 	}

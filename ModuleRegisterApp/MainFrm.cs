@@ -44,8 +44,8 @@ namespace ModuleRegisterApp
 
             cboDept.SelectedIndex = 0;
             cboType.SelectedIndex = 0;
-            cboModel.Items.AddRange(ConfigurationManager.AppSettings["modelType"].ToString().Split(';'));
-            cboModel.SelectedIndex = 0;
+
+            uInfo.LoadModelData(ref cboModel);
         }
 
         /// <summary>
@@ -452,6 +452,23 @@ namespace ModuleRegisterApp
             {
                 ReservationOut form = new ReservationOut(uInfo);
                 form.Show();
+            }
+        }
+
+        private void ScrapPalletToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "ScrapPalletFrm")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                ScrapBigCartonFrm scFrom = new ScrapBigCartonFrm(uInfo);
+                scFrom.Show();
             }
         }
     }

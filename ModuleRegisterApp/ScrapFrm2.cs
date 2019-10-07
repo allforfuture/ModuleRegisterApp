@@ -32,7 +32,6 @@ namespace ModuleRegisterApp
             InitializeComponent();
             this.uInfo = u;
             uInfo.LoadModelData(ref model_cbx);
-            model_cbx.SelectedIndex = 1;
 
             //dtModule.Columns.Add("sn");
             //dtModule.Columns.Add("model");

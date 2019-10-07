@@ -147,14 +147,14 @@ namespace ModuleRegisterApp
             return newid;
         }
 
-        public string GetNewCartonId()
+        public string GetNewCartonId(string DBtable)
         {
             string newid = "";
             using (con = new NpgsqlConnection(DbConnectstring))
             {
                 con.Open();
-                string sql0 = "LOCK TABLE t_carton IN ACCESS EXCLUSIVE MODE";
-                string sql1 = "select MAX(carton_id) from t_carton where create_date >='" + DateTime.Now.ToString("yyyy/MM/dd 00:00:00") + "'";
+                string sql0 = $"LOCK TABLE t_{DBtable} IN ACCESS EXCLUSIVE MODE";
+                string sql1 = $"SELECT MAX({DBtable}_id) FROM t_{DBtable} WHERE create_date >='" + DateTime.Now.ToString("yyyy/MM/dd 00:00:00") + "'";
                 NpgsqlTransaction tran = con.BeginTransaction();
                 try
                 {
@@ -165,12 +165,28 @@ namespace ModuleRegisterApp
 					newid = cmd.ExecuteScalar().ToString();
                     if (newid == string.Empty)
                     {
-                        newid =DateTime.Now.ToString("yyyyMMdd") + "C" + "001";
+                        switch (DBtable)
+                        {
+                            case "carton":
+                                newid = DateTime.Now.ToString("yyyyMMdd") + "C" + "001";
+                                break;
+                            case "carton_big":
+                                newid = DateTime.Now.ToString("yyyyMMdd") + "B" + "001";
+                                break;
+                        }
                     }
                     else
                     {
-						string tmp = "00" + (int.Parse(newid.Substring(9, 3)) + 1).ToString();
-                        newid = newid.Substring(0, 8) + "C"+ tmp.Substring(tmp.Length - 3, 3);
+                        string tmp = "00" + (int.Parse(newid.Substring(9, 3)) + 1).ToString();
+                        switch (DBtable)
+                        {
+                            case "carton":
+                                newid = newid.Substring(0, 8) + "C" + tmp.Substring(tmp.Length - 3, 3);
+                                break;
+                            case "carton_big":
+                                newid = newid.Substring(0, 8) + "B" + tmp.Substring(tmp.Length - 3, 3);
+                                break;
+                        }
                     }
                     tran.Commit();
                 }
