@@ -421,7 +421,24 @@ namespace ModuleRegisterApp
 			}
 		}
 
-        private void ReservationInToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ScrapPalletToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "ScrapPalletFrm")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                ScrapBigCartonFrm scFrom = new ScrapBigCartonFrm(uInfo);
+                scFrom.Show();
+            }
+        }
+
+        private void 保留品登记ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bool isOpen = false;
             foreach (Form f in Application.OpenForms)
@@ -438,7 +455,7 @@ namespace ModuleRegisterApp
             }
         }
 
-        private void ReservationInOutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 保留品取出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bool isOpen = false;
             foreach (Form f in Application.OpenForms)
@@ -455,20 +472,37 @@ namespace ModuleRegisterApp
             }
         }
 
-        private void ScrapPalletToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 保留品装箱ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bool isOpen = false;
             foreach (Form f in Application.OpenForms)
             {
-                if (f.Name == "ScrapPalletFrm")
+                if (f.Name == "ReservationCartonFrm")
                 {
                     isOpen = true;
                 }
             }
             if (!isOpen)
             {
-                ScrapBigCartonFrm scFrom = new ScrapBigCartonFrm(uInfo);
-                scFrom.Show();
+                ReservationCartonFrm form = new ReservationCartonFrm(uInfo);
+                form.Show();
+            }
+        }
+
+        private void 保留品装大箱ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "ReservationBigCartonFrm")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                ReservationBigCartonFrm form = new ReservationBigCartonFrm(uInfo);
+                form.Show();
             }
         }
     }

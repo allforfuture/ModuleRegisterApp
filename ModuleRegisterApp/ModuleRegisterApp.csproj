@@ -144,16 +144,28 @@
     <Compile Include="ReturnModuleFrm.Designer.cs">
       <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ScrapBigCartonFrm.cs">
+    <Compile Include="Encase\ReservationBigCartonFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ScrapBigCartonFrm.Designer.cs">
+    <Compile Include="Encase\ReservationBigCartonFrm.Designer.cs">
+      <DependentUpon>ReservationBigCartonFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encase\ScrapBigCartonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encase\ScrapBigCartonFrm.Designer.cs">
       <DependentUpon>ScrapBigCartonFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ScrapCartonFrm.cs">
+    <Compile Include="Encase\ReservationCartonFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ScrapCartonFrm.Designer.cs">
+    <Compile Include="Encase\ReservationCartonFrm.Designer.cs">
+      <DependentUpon>ReservationCartonFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encase\ScrapCartonFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encase\ScrapCartonFrm.Designer.cs">
       <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ReservationIn.cs">
@@ -215,10 +227,16 @@
     <EmbeddedResource Include="ReturnModuleFrm.resx">
       <DependentUpon>ReturnModuleFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ScrapBigCartonFrm.resx">
+    <EmbeddedResource Include="Encase\ReservationBigCartonFrm.resx">
+      <DependentUpon>ReservationBigCartonFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encase\ScrapBigCartonFrm.resx">
       <DependentUpon>ScrapBigCartonFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ScrapCartonFrm.resx">
+    <EmbeddedResource Include="Encase\ReservationCartonFrm.resx">
+      <DependentUpon>ReservationCartonFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encase\ScrapCartonFrm.resx">
       <DependentUpon>ScrapCartonFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReservationIn.resx">

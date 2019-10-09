@@ -704,3 +704,5 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegis
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.exe
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.pdb
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ScrapBigCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationBigCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationCartonFrm.resources

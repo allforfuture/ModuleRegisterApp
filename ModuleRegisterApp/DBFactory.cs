@@ -147,44 +147,66 @@ namespace ModuleRegisterApp
             return newid;
         }
 
-        public string GetNewCartonId(string DBtable)
+        public string GetNewCartonId(string db,string identifier)
         {
             string newid = "";
             using (con = new NpgsqlConnection(DbConnectstring))
             {
                 con.Open();
-                string sql0 = $"LOCK TABLE t_{DBtable} IN ACCESS EXCLUSIVE MODE";
-                string sql1 = $"SELECT MAX({DBtable}_id) FROM t_{DBtable} WHERE create_date >='" + DateTime.Now.ToString("yyyy/MM/dd 00:00:00") + "'";
+                string sql0 = $"LOCK TABLE t_{db} IN ACCESS EXCLUSIVE MODE";
+                string sql1 = string.Format(
+@"SELECT MAX({0}_id)
+FROM t_{0}
+WHERE create_date >='{1}'
+AND SUBSTRING(carton_id FROM 9 FOR 1)='{2}'",
+db, DateTime.Now.ToString("yyyy-MM-dd"), identifier);
+                
                 NpgsqlTransaction tran = con.BeginTransaction();
                 try
                 {
                     NpgsqlCommand cmd = new NpgsqlCommand(sql0, con);
                     cmd.ExecuteNonQuery();
                     cmd = new NpgsqlCommand(sql1, con);
-					//运行标量cmd.ExecuteScalar(),获取select的值
-					newid = cmd.ExecuteScalar().ToString();
+					
+					newid = cmd.ExecuteScalar().ToString();//运行标量cmd.ExecuteScalar(),获取select的值
                     if (newid == string.Empty)
                     {
-                        switch (DBtable)
+                        switch (identifier)
                         {
-                            case "carton":
+                            //报废装箱
+                            case "C":
                                 newid = DateTime.Now.ToString("yyyyMMdd") + "C" + "001";
                                 break;
-                            case "carton_big":
+                            //报废装大箱
+                            case "B":
                                 newid = DateTime.Now.ToString("yyyyMMdd") + "B" + "001";
+                                break;
+                            //保留品装箱
+                            case "R":
+                                newid = DateTime.Now.ToString("yyyyMMdd") + "R" + "001";
+                                break;
+                            //保留品装大箱
+                            case "L":
+                                newid = DateTime.Now.ToString("yyyyMMdd") + "L" + "001";
                                 break;
                         }
                     }
                     else
                     {
                         string tmp = "00" + (int.Parse(newid.Substring(9, 3)) + 1).ToString();
-                        switch (DBtable)
+                        switch (identifier)
                         {
-                            case "carton":
+                            case "C":
                                 newid = newid.Substring(0, 8) + "C" + tmp.Substring(tmp.Length - 3, 3);
                                 break;
-                            case "carton_big":
+                            case "B":
                                 newid = newid.Substring(0, 8) + "B" + tmp.Substring(tmp.Length - 3, 3);
+                                break;
+                            case "R":
+                                newid = newid.Substring(0, 8) + "R" + tmp.Substring(tmp.Length - 3, 3);
+                                break;
+                            case "L":
+                                newid = newid.Substring(0, 8) + "L" + tmp.Substring(tmp.Length - 3, 3);
                                 break;
                         }
                     }

@@ -268,3 +268,5 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleReg
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.exe
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.pdb
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapBigCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationBigCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationCartonFrm.resources
