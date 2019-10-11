@@ -4,7 +4,7 @@
   <description asmv2:iconFile="bitbug_favicon (3).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ModuleRegisterApp" version="2.0.1009.1700" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ModuleRegisterApp" version="2.0.1011.1200" language="neutral" processorArchitecture="msil" />
     <commandLine file="ModuleRegisterApp.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ModuleRegisterApp.exe" size="136192">
-      <assemblyIdentity name="ModuleRegisterApp" version="2.0.1009.1700" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="ModuleRegisterApp" version="2.0.1011.1200" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WF4qo+OiMYYbHUrj44KOkVokNGfA+7x+OtfZtDCMEvc=</dsig:DigestValue>
+        <dsig:DigestValue>AMae8wEuaSfFAczNHY0RRH8NYXpPR4cCQCSbflHti+M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -105,7 +105,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4pE8fKlwbTaHQ1GkBQbCunZqhzG6PXh8xVoIe4jX1ik=</dsig:DigestValue>
+      <dsig:DigestValue>Hr7T53j4t+6WYvO1BXTelQVvxzjr5PAG1hl3h/t6jZc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Verson.xml" size="427" writeableType="applicationData">

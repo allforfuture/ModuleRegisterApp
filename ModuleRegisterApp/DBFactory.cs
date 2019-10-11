@@ -157,10 +157,10 @@ namespace ModuleRegisterApp
                 string sql1 = string.Format(
 @"SELECT MAX({0}_id)
 FROM t_{0}
-WHERE create_date >='{1}'
-AND SUBSTRING(carton_id FROM 9 FOR 1)='{2}'",
-db, DateTime.Now.ToString("yyyy-MM-dd"), identifier);
-                
+WHERE create_date >=CURRENT_DATE
+AND SUBSTRING(carton_id FROM 9 FOR 1)='{1}'",
+db, identifier);
+
                 NpgsqlTransaction tran = con.BeginTransaction();
                 try
                 {

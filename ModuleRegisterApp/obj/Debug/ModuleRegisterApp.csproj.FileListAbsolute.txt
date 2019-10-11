@@ -681,8 +681,6 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\ModuleRegis
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\ModuleRegisterApp.application
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\ModuleRegisterApp.exe
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\ModuleRegisterApp.pdb
-C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\Mono.Security.dll
-C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.csprojAssemblyReference.cache
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.InfoFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.LoginFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.MainFrm.resources
@@ -706,3 +704,5 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegis
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ScrapBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\Mono.Security.dll
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.csprojAssemblyReference.cache
