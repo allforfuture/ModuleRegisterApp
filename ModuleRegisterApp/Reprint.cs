@@ -34,33 +34,11 @@ namespace ModuleRegisterApp
         {
             DataTable dt = new DataTable();
             string sql="";
-            if (rbtnM.Checked)
-            {
-                sql =
-$@"SELECT a.record_id AS ID,
-TO_CHAR(a.register_date,'YYYY/MM/DD')AS register_date,
-CASE
-	WHEN a.type = 0 THEN '借出'
-	WHEN a.type = 1 THEN '还入'
-	WHEN a.type = 2 THEN '报废'
-	WHEN a.type = 3 THEN '厂外借出'
-	WHEN a.type = 4 THEN '保留品'		  
-END AS type,
-b.model,
-d.user_name,
-COUNT(DISTINCT e.serial_cd),
-a.category_cd
-FROM t_module AS b
-JOIN t_record AS a ON a.record_id = b.record_id
-JOIN t_user AS d ON a.register_emp = d.user_id
-JOIN t_module AS e ON a.record_id = e.record_id
-WHERE b.serial_cd = '{txtID.Text}'
-GROUP BY a.record_id,a.register_date,a.type,a.category_cd,b.model,d.user_name";
-            }
-            else if (rbtnP.Checked)
+            if (rbtnP.Checked)
             {
                 sql =
 $@"SELECT b.carton_id AS ID,
+b.record_id,
 TO_CHAR(b.create_date,'YYYY/MM/DD')AS register_date,
 CASE
 	WHEN a.type = 0 THEN '借出'
@@ -78,12 +56,13 @@ JOIN t_carton AS b ON a.record_id = b.record_id
 JOIN t_module AS c ON a.record_id = c.record_id
 JOIN t_user AS d ON b.create_user = d.user_id
 WHERE b.carton_id in (SELECT carton_id FROM t_carton WHERE record_id = '{txtID.Text}')
-GROUP BY b.carton_id,b.create_date,a.type,a.category_cd,c.model,d.user_name";
+GROUP BY b.carton_id,b.record_id,b.create_date,a.type,a.category_cd,c.model,d.user_name";
             }
             else if (rbtnL.Checked)
             {
                 sql =
 $@"SELECT b.carton_big_id AS ID,
+b.carton_id,
 TO_CHAR(b.create_date,'YYYY/MM/DD')AS register_date,
 CASE
 	WHEN c.type = 0 THEN '借出'
@@ -102,7 +81,7 @@ JOIN t_record AS c ON a.record_id = c.record_id
 JOIN t_module AS d ON c.record_id=d.record_id
 JOIN t_user AS e ON b.create_user = e.user_id
 WHERE b.carton_big_id in (SELECT carton_big_id FROM t_carton_big WHERE carton_id='{txtID.Text}')
-GROUP BY b.carton_big_id,b.create_date,c.type,c.category_cd,d.model,e.user_name";
+GROUP BY b.carton_big_id,b.carton_id,b.create_date,c.type,c.category_cd,d.model,e.user_name";
             }
 
             new DBFactory().ExecuteDataTable(sql, ref dt);

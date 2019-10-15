@@ -82,7 +82,8 @@ namespace ModuleRegisterApp
                     sql.AppendLine("and");
                 else
                     sql.AppendLine("where");
-                sql.AppendLine(string.Format("mm.serial_cd = '{0}'", module_txt.Text));
+                //sql.AppendLine(string.Format("mm.serial_cd = '{0}'", module_txt.Text));
+                sql.AppendLine($"rr.record_id in(SELECT record_id FROM t_module where serial_cd='{module_txt.Text}')");
                 IsQuery = true;
             }
             if (chkRecordID.Checked)
