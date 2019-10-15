@@ -505,5 +505,21 @@ namespace ModuleRegisterApp
                 form.Show();
             }
         }
+
+        private void 重新打印ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == "Reprint")
+                {
+                    isOpen = true;
+                }
+            }
+            if (!isOpen)
+            {
+                new Reprint().Show();
+            }
+        }
     }
 }

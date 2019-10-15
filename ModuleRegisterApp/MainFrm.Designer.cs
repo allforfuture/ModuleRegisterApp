@@ -66,13 +66,14 @@
             this.保留品登记ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.保留品取出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.保留品装箱ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.保留品装大箱ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.ScrapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ScrapCartonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ScrapPalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.报废ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.保留品装大箱ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重新打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Sumary_dgv)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -377,7 +378,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.ToolStripMenuItem3,
-            this.qAToolStripMenuItem});
+            this.qAToolStripMenuItem,
+            this.重新打印ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(966, 25);
@@ -399,7 +401,7 @@
             // 
             this.BerrowToolStripMenuItem.Name = "BerrowToolStripMenuItem";
             this.BerrowToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.B)));
-            this.BerrowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.BerrowToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.BerrowToolStripMenuItem.Text = "借出";
             this.BerrowToolStripMenuItem.Click += new System.EventHandler(this.BerrowToolStripMenuItem_Click);
             // 
@@ -407,7 +409,7 @@
             // 
             this.ReturnToolStripMenuItem.Name = "ReturnToolStripMenuItem";
             this.ReturnToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.ReturnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReturnToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.ReturnToolStripMenuItem.Text = "还入";
             this.ReturnToolStripMenuItem.Click += new System.EventHandler(this.ReturnToolStripMenuItem_Click);
             // 
@@ -415,7 +417,7 @@
             // 
             this.ProduceScrapToolStripMenuItem.Name = "ProduceScrapToolStripMenuItem";
             this.ProduceScrapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
-            this.ProduceScrapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProduceScrapToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.ProduceScrapToolStripMenuItem.Text = "报废前扫描";
             this.ProduceScrapToolStripMenuItem.Click += new System.EventHandler(this.ProduceScrapToolStripMenuItem_Click);
             // 
@@ -427,20 +429,20 @@
             this.保留品装箱ToolStripMenuItem,
             this.保留品装大箱ToolStripMenuItem});
             this.保留品ToolStripMenuItem.Name = "保留品ToolStripMenuItem";
-            this.保留品ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.保留品ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.保留品ToolStripMenuItem.Text = "保留品";
             // 
             // 保留品登记ToolStripMenuItem
             // 
             this.保留品登记ToolStripMenuItem.Name = "保留品登记ToolStripMenuItem";
-            this.保留品登记ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.保留品登记ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.保留品登记ToolStripMenuItem.Text = "保留品登记";
             this.保留品登记ToolStripMenuItem.Click += new System.EventHandler(this.保留品登记ToolStripMenuItem_Click);
             // 
             // 保留品取出ToolStripMenuItem
             // 
             this.保留品取出ToolStripMenuItem.Name = "保留品取出ToolStripMenuItem";
-            this.保留品取出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.保留品取出ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.保留品取出ToolStripMenuItem.Text = "保留品取出";
             this.保留品取出ToolStripMenuItem.Visible = false;
             this.保留品取出ToolStripMenuItem.Click += new System.EventHandler(this.保留品取出ToolStripMenuItem_Click);
@@ -448,9 +450,16 @@
             // 保留品装箱ToolStripMenuItem
             // 
             this.保留品装箱ToolStripMenuItem.Name = "保留品装箱ToolStripMenuItem";
-            this.保留品装箱ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.保留品装箱ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.保留品装箱ToolStripMenuItem.Text = "保留品装箱";
             this.保留品装箱ToolStripMenuItem.Click += new System.EventHandler(this.保留品装箱ToolStripMenuItem_Click);
+            // 
+            // 保留品装大箱ToolStripMenuItem
+            // 
+            this.保留品装大箱ToolStripMenuItem.Name = "保留品装大箱ToolStripMenuItem";
+            this.保留品装大箱ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.保留品装大箱ToolStripMenuItem.Text = "保留品装大箱";
+            this.保留品装大箱ToolStripMenuItem.Click += new System.EventHandler(this.保留品装大箱ToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem3
             // 
@@ -466,7 +475,7 @@
             // 
             this.ScrapToolStripMenuItem.Name = "ScrapToolStripMenuItem";
             this.ScrapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ScrapToolStripMenuItem.Text = "报废";
             this.ScrapToolStripMenuItem.Click += new System.EventHandler(this.ScrapToolStripMenuItem_Click);
             // 
@@ -474,14 +483,14 @@
             // 
             this.ScrapCartonToolStripMenuItem.Name = "ScrapCartonToolStripMenuItem";
             this.ScrapCartonToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapCartonToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ScrapCartonToolStripMenuItem.Text = "报废|装箱";
             this.ScrapCartonToolStripMenuItem.Click += new System.EventHandler(this.ScrapCartonToolStripMenuItem_Click);
             // 
             // ScrapPalletToolStripMenuItem
             // 
             this.ScrapPalletToolStripMenuItem.Name = "ScrapPalletToolStripMenuItem";
-            this.ScrapPalletToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ScrapPalletToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ScrapPalletToolStripMenuItem.Text = "报废|装大箱";
             this.ScrapPalletToolStripMenuItem.Click += new System.EventHandler(this.ScrapPalletToolStripMenuItem_Click);
             // 
@@ -501,12 +510,12 @@
             this.报废ToolStripMenuItem.Text = "实验品保存";
             this.报废ToolStripMenuItem.Click += new System.EventHandler(this.报废ToolStripMenuItem_Click);
             // 
-            // 保留品装大箱ToolStripMenuItem
+            // 重新打印ToolStripMenuItem
             // 
-            this.保留品装大箱ToolStripMenuItem.Name = "保留品装大箱ToolStripMenuItem";
-            this.保留品装大箱ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.保留品装大箱ToolStripMenuItem.Text = "保留品装大箱";
-            this.保留品装大箱ToolStripMenuItem.Click += new System.EventHandler(this.保留品装大箱ToolStripMenuItem_Click);
+            this.重新打印ToolStripMenuItem.Name = "重新打印ToolStripMenuItem";
+            this.重新打印ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.重新打印ToolStripMenuItem.Text = "重新打印";
+            this.重新打印ToolStripMenuItem.Click += new System.EventHandler(this.重新打印ToolStripMenuItem_Click);
             // 
             // MainFrm
             // 
@@ -576,5 +585,6 @@
         private System.Windows.Forms.ToolStripMenuItem 保留品取出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 保留品装箱ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 保留品装大箱ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重新打印ToolStripMenuItem;
     }
 }

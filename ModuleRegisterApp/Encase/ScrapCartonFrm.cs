@@ -89,6 +89,7 @@ namespace ModuleRegisterApp
 		private void Record_txt_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode != Keys.Enter) return;
+            Record_txt.SelectAll();
             lblErr.Text = "";
             if (Record_txt.Text.Length != 12)
 			{

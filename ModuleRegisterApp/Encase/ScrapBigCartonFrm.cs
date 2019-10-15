@@ -50,7 +50,7 @@ namespace ModuleRegisterApp
 		/// <param name="e"></param>
 		private void Carton_txt_KeyDown(object sender, KeyEventArgs e)
 		{
-            if (e.KeyCode != Keys.Enter || txtCartonBig.Text.Length != 12) return;
+            if (e.KeyCode != Keys.Enter || txtCartonBig.Text.Length != 12) return;            
             if (txtCartonBig.Text.Substring(8, 1) != "B")
             {
                 MessageBox.Show("Wrong format!");
@@ -98,6 +98,7 @@ GROUP BY carton_big_id,model";
 		private void TxtCarton_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode != Keys.Enter) return;
+            txtCarton.SelectAll();
             lblErr.Text = "";
             if (txtCarton.Text.Length != 12)
 			{

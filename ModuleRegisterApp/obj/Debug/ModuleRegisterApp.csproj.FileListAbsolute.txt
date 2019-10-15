@@ -704,5 +704,6 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegis
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ScrapBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.ReservationCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.Reprint.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Debug\Mono.Security.dll
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Debug\ModuleRegisterApp.csprojAssemblyReference.cache

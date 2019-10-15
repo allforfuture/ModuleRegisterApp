@@ -98,6 +98,7 @@ GROUP BY carton_big_id,model";
 		private void TxtCarton_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode != Keys.Enter) return;
+            txtCarton.SelectAll();
             lblErr.Text = "";
             if (txtCarton.Text.Length != 12)
 			{

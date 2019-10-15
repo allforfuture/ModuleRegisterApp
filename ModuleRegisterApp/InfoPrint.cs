@@ -187,7 +187,6 @@ namespace ModuleRegisterApp
                     Rectangle rec1 = new Rectangle(r2, c6, 200, 90);
                     g.DrawString(rInfo.reason, f1, brush1, rec1);
                 }
-
             }
             catch(Exception ex)
             {
@@ -240,8 +239,8 @@ namespace ModuleRegisterApp
 				g.DrawString(tmpStr, f1, brush1, new Point(r1, c5));
 				g.DrawString(dt.Rows[0]["qty"].ToString(), f1, brush1, new Point(r2, c5));
 
-
-			}
+              
+            }
             catch (Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show("Print failed." + System.Environment.NewLine + ex.Message,

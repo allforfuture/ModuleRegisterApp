@@ -245,8 +245,6 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleReg
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.application
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.exe
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\ModuleRegisterApp.pdb
-C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
-C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.InfoFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.LoginFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.MainFrm.resources
@@ -270,3 +268,6 @@ C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleReg
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ScrapBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationBigCartonFrm.resources
 C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.ReservationCartonFrm.resources
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\bin\Release\Mono.Security.dll
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.csprojAssemblyReference.cache
+C:\Users\yyx19\Desktop\ModuleRegisterApp\ModuleRegisterApp\obj\Release\ModuleRegisterApp.Reprint.resources

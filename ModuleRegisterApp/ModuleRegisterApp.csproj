@@ -132,6 +132,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reprint.Designer.cs">
+      <DependentUpon>Reprint.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReservationOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reprint.resx">
+      <DependentUpon>Reprint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReservationOut.resx">
       <DependentUpon>ReservationOut.cs</DependentUpon>
     </EmbeddedResource>
