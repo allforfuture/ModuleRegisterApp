@@ -196,8 +196,9 @@ GROUP BY carton_id,type,model";
 		/// <param name="e"></param>
 		private void BtnBigCarton_Click(object sender, EventArgs e)
 		{
-            string tmp = dbFaci.GetNewCartonId("carton_big","B");
-			txtCartonBig.Text = tmp;
+            //string tmp = dbFaci.GetNewCartonId("carton_big","B");
+            string tmp = dbFaci.GetNewId("B");
+            txtCartonBig.Text = tmp;
 			txtCartonBig.Enabled = false;
 			txtCarton.Enabled = true;
 			btnPrint.Enabled = true;

@@ -220,6 +220,26 @@ db, identifier);
             return newid;
         }
 
+        public string GetNewId( string identifier)
+        {
+            string sql = 
+$@"UPDATE assign_id
+SET
+	id=TO_CHAR(NOW(),'YYYYMMDD')||type||SUBSTR('00'||number,LENGTH('00'||number)-2),
+	update_time=NOW(),
+	number=number+1
+WHERE type='{identifier}'
+RETURNING id";
+            string newid = "";
+            using (con = new NpgsqlConnection(DbConnectstring))
+            {
+                con.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, con);
+                newid = cmd.ExecuteScalar().ToString();
+            }
+            return newid;
+        }
+
         public void ExcuteDataTableAOI(string model,string sql,ref DataTable dt)
         {
             string DBConStr;

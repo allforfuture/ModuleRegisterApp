@@ -195,8 +195,9 @@ GROUP BY record_id,type,model";
 		/// <param name="e"></param>
 		private void NewCarton_btn_Click(object sender, EventArgs e)
 		{
-            string tmp = dbFaci.GetNewCartonId("carton","R");
-			Carton_txt.Text = tmp;
+            //string tmp = dbFaci.GetNewCartonId("carton","R");
+            string tmp = dbFaci.GetNewId( "R");
+            Carton_txt.Text = tmp;
 			Carton_txt.Enabled = false;
 			Record_txt.Enabled = true;
 			Print_btn.Enabled = true;

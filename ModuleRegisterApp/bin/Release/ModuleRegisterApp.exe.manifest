@@ -4,7 +4,7 @@
   <description asmv2:iconFile="bitbug_favicon (3).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ModuleRegisterApp" version="2.0.1015.1830" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ModuleRegisterApp" version="2.0.1024.930" language="neutral" processorArchitecture="msil" />
     <commandLine file="ModuleRegisterApp.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ModuleRegisterApp.exe" size="134656">
-      <assemblyIdentity name="ModuleRegisterApp" version="2.0.1015.1830" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ModuleRegisterApp.exe" size="135168">
+      <assemblyIdentity name="ModuleRegisterApp" version="2.0.1024.930" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7QbDgGVCNVBmrV3kb0KqSau4QhSpLZlmEB8x4HeWETI=</dsig:DigestValue>
+        <dsig:DigestValue>hKcqmfCTK2juClFz7Cx5ztEBHtfYjhD2N+L1sbYgRjI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -105,7 +105,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Hr7T53j4t+6WYvO1BXTelQVvxzjr5PAG1hl3h/t6jZc=</dsig:DigestValue>
+      <dsig:DigestValue>4pE8fKlwbTaHQ1GkBQbCunZqhzG6PXh8xVoIe4jX1ik=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Verson.xml" size="427" writeableType="applicationData">
