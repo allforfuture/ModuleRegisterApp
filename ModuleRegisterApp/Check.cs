@@ -31,27 +31,7 @@ namespace ModuleRegisterApp
 			ServicePointManager.Expect100Continue = false; // HTTPエラー(417)対応
                                                            // リクエスト作成
 
-            string URIstr = string.Empty;
-            switch (model)
-            {
-                case "KK04":
-                    URIstr = "http://172.27.32.30/pqm_aoi_api/kk04/check_module.php";
-                    break;
-                case "KK06":
-                    URIstr = "http://172.27.32.30/pqm_aoi_api/kk06/check_module.php";
-                    break;
-                case "KK07":
-                    URIstr = "http://172.27.32.30/pqm_aoi_api/kk07/check_module.php";
-                    break;
-                case "KK08":
-                    URIstr = "http://172.27.32.30/pqm_aoi_api/kk08/check_module.php";
-                    break;
-                case "KK09":
-                    URIstr = "http://172.27.32.30/pqm_aoi_api/kk09/check_module.php";
-                    break;
-                    //default:
-                    //    break;
-            }
+            string URIstr = ConfigurationManager.AppSettings[model];
             //HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://172.27.32.30/pqm_aoi_api/check_module.php");
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URIstr);
 

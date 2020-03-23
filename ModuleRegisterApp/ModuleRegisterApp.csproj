@@ -294,6 +294,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bitbug_favicon %283%29.ico" />
+    <Content Include="Dll\Mono.Security.dll" />
+    <Content Include="Dll\Npgsql.dll" />
+    <Content Include="Dll\ThoughtWorks.QRCode.dll" />
+    <Content Include="Dll\Updater.dll" />
     <Content Include="Verson.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
